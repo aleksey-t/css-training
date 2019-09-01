@@ -1,0 +1,21 @@
+.thumbnail {
+  width: 170px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.thumbnail img{
+  width: 100%;
+  border: solid 1px #777;
+  border-radius: 10px;
+}
+
+.thumbnail a{
+  text-decoration: none;
+}
+
+.thumbnail-title{
+  color: #eee;
+  margin: 10px 0;
+  text-align: center;
+}

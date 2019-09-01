@@ -1,0 +1,129 @@
+.burger-menu-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  cursor: pointer;
+  z-index: 2;
+  padding: 10px 30px 30px 10px;
+}
+
+.burger-menu-bar {
+  height: 5px;
+  margin-bottom: 5px;
+  background: #eee;
+  border-radius: 3px;
+  transform-origin: bottom left;
+  transition: all 0.3s linear;
+}
+
+.burger-menu-button :first-child {
+  transform-origin: top left;
+  transition: all 0.3s linear;
+}
+
+.burger-menu-button :last-child {
+  transform-origin: bottom left;
+  transition: all 0.3s linear;
+}
+
+.burger-menu-button.opened :first-child {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  transition: all 0.3s linear;
+}
+
+.burger-menu-button.opened :last-child {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  transition: all 0.3s linear;
+}
+
+.burger-menu-button :nth-child(2) {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.burger-menu-button.opened :nth-child(2) {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.burger-menu-overlay {
+  z-index: 1;
+  position: absolute;
+  left: -75px;
+  top: -75px;
+  width: 150px;
+  height: 150px;
+  border-radius: 300px;
+  background: rgb(104, 28, 18);
+  transition: all 0.1s ease-out;
+}
+
+@media (orientation: landscape) {
+  .burger-menu-overlay.opened {
+    left: -200vw;
+    top: -200vw;
+    width: 400vw;
+    height: 400vw;
+    border-radius: 800vw;
+    background: rgb(104, 28, 18);
+    transition: all 0.2s ease-in;
+  }
+}
+
+@media (orientation: portrait) {
+  .burger-menu-overlay.opened {
+    left: -200vh;
+    top: -200vh;
+    width: 400vh;
+    height: 400vh;
+    border-radius: 800vh;
+    background: rgb(104, 28, 18);
+    transition: all 0.2s ease-in;
+  }
+}
+
+.burger-menu-content {
+  z-index: 3;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  left: 100px;
+  top: 0;
+  transition: opacity 0s ease-in;
+}
+
+.burger-menu-content.opened {
+  z-index: 3;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+  transition: opacity 0.1s 0.1s ease-in;
+}
+
+.burger-menu-content ul {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.burger-menu-content li {
+  list-style-type: none;
+  color: #eee;
+  padding: 0;
+  margin: 25px 0;
+  font-size: 20px;
+}
+
+.burger-menu-content a {
+  text-decoration: none;
+  color: #eee;
+  padding: 10px 20px;
+}
+
+.burger-menu-content a:hover {
+  background: rgb(189, 51, 51);
+}
