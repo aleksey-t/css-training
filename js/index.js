@@ -12,6 +12,8 @@ const hidePopup = text => {
     popup.classList.remove('visible');
 };
 
-document.querySelector('.home-h1').addEventListener('click', () => {
-    showPopup('Вы уже на главной');
-})
+if (document.querySelector('.home-h1')) {
+    document.querySelector('.home-h1').addEventListener('click', () => {
+        showPopup('Вы уже на главной');
+    });
+}
