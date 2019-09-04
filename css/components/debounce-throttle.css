@@ -1,0 +1,14 @@
+.output{
+    border-left: solid 5px #aaa;
+    min-height: 50px;
+    padding: 10px;
+}
+.description{
+    font-size: 16px;
+    color: #eeeeee;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.11);
+    margin-bottom: 30px;
+}
