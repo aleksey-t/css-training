@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="theme-color" content="rgb(104, 28, 18)"/>
+    <title>Демо-сайт</title>
+
+    <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/components/burger-menu.css"/>
+    <link rel="stylesheet" href="../css/components/gallery.css"/>
+    <link rel="stylesheet" href="../css/forms.css"/>
+    <link rel="stylesheet" href="../css/components/debounce-throttle.css"/>
+</head>
+<body>
+<div class="burger-menu-button">
+    <div class="burger-menu-bar"></div>
+    <div class="burger-menu-bar"></div>
+    <div class="burger-menu-bar"></div>
+</div>
+
+<div class="burger-menu-overlay"></div>
+<div class="burger-menu-content">
+    <h2>
+        Меню сайта
+    </h2>
+
+    <ul>
+        <li>
+            <a href="/">
+                Главная
+            </a>
+        </li>
+        <li>
+            <a href="/css-effects/index.html">
+                Эффекты на CSS
+            </a>
+        </li>
+    </ul>
+</div>
+
+<header>
+    <a href="/">
+        <h1>
+            Демо-сайт
+        </h1>
+    </a>
+</header>
+
+<main>
+    <h2>Debounce vs Throttle</h2>
+    <div class="flex">
+        <div class="flex flex-item column">
+            <div class="flex-item">
+                <h3>Debounce</h3>
+                <div class="description">
+                    Функция выполняется через n миллисекунд после своего последнего вызова.
+                </div>
+                <label for="debounced-input">
+                    <input type="text" id="debounced-input" placeholder="Debounced ввод"/>
+                </label>
+            </div>
+            <div class="divider"></div>
+            <div class="flex-item">
+                <h3>Throttle</h3>
+                <div class="description">
+                    Функция выполняется не чаще чем 1 раз в n миллисекунд.
+                </div>
+                <label for="throttled-input">
+                    <input type="text" id="throttled-input" placeholder="Throttled ввод"/>
+                </label>
+            </div>
+        </div>
+
+        <div class="flex-item">
+            <h4>Вывод:</h4>
+            <div id="output" class="output">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../js/index.js"></script>
+<script src="../js/components/debounce-throttle.js"></script>
+</body>
+</html>
