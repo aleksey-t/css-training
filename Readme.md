@@ -2,4 +2,4 @@
 
 Main purpose of this is learning CSS. And making cool effects with CSS is just a lot of fun.
 
-[Live Demo](http://j83.ru)
+[Live Demo](https://kotik-kot.ru/)
